@@ -1,0 +1,11 @@
+# Ignore IntelliJ files
+.idea/
+*.iml
+
+# Ignore build/output folders
+out/
+*.class
+
+# OS junk
+.DS_Store
+Thumbs.db
