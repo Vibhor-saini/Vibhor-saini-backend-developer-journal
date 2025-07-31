@@ -1,4 +1,4 @@
-public class HelloWorld {
+public class Basic {
     public static void main(String[] args) {
 
         //Java Variables & Data Types==============
