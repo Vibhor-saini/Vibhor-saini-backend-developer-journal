@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import day04.Employee;
+
 class Employee {
     String name;
     double baseSalary;
