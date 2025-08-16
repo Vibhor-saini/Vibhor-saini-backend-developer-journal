@@ -21,7 +21,7 @@ class Employee {
 
 }
 
-public class Day2Example2 {
+public class Day4Example2 {
     public static void main(String[] args) {
         Set<Employee> employees = new HashSet<>();
 
