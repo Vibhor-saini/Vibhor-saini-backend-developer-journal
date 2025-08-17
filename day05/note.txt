@@ -1,0 +1,29 @@
+Day 5 Topics – HashMap / Map Interface
+
+Qusetion: What is a Map?
+
+Answer:
+Stores key-value pairs
+Each key is unique
+Values can be duplicated
+
+🔹 Concept==============
+
+HashMap<K, V> stores data in key-value pairs.
+Keys are unique, values can be duplicated.
+Useful when you want fast lookup using a key (like id → employee).
+
+Key Points================
+
+Keys must be unique, values can repeat
+Use get(key) to access a value
+Use containsKey(key) / containsValue(value) to check
+Iteration is done using entrySet()
+
+HashMap Operations========================
+
+Stores data as Key → Value.
+.put(key, value) → insert.
+.get(key) → retrieve.
+.remove(key) → delete.
+.containsKey(key) → check existence.
