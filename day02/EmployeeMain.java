@@ -1,6 +1,7 @@
+package day02;
 import java.util.Scanner;
 
-import day04.Employee;
+// import day04.Employee;
 
 class Employee {
     String name;

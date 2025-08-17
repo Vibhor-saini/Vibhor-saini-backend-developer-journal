@@ -1,3 +1,4 @@
+package day02;
 import java.util.*;
 
 public class practice {

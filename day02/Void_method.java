@@ -1,3 +1,4 @@
+package day02;
 import java.util.*;
 
 public class Void_method {
@@ -27,6 +28,7 @@ public class Void_method {
 
         double base_salary = sc.nextDouble();
         calcualteSalary(name, bonus, base_salary);
+        sc.close();
 
     }
 }

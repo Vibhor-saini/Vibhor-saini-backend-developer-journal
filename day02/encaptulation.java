@@ -1,12 +1,13 @@
-import java.util.Scanner;
+package day02;
+import java.util.*;
 
-class Employeee {
+class Employe {
     private String name;
     private double baseSalary;
     private double bonus;
 
     // Constructor
-    Employeee(String name, double baseSalary, double bonus) {
+    Employe(String name, double baseSalary, double bonus) {
         this.name = name;
         this.baseSalary = baseSalary;
         this.bonus = bonus;
@@ -22,7 +23,6 @@ class Employeee {
     public double getBonus() {
         return bonus;
     }
-
 
     public void setBaseSalary(double baseSalary) {
         if (baseSalary >= 0) { // validation
@@ -58,7 +58,7 @@ class Employeee {
     }
 }
 
-public class Encaptulationn {
+public class encaptulation {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -73,7 +73,7 @@ public class Encaptulationn {
         double bonus = sc.nextDouble();
 
         // Creating object
-        Employeee emp = new Employeee(name, baseSalary, bonus);
+        Employe emp = new Employe(name, baseSalary, bonus);
 
         // Changing data using setters
         emp.setBonus(emp.getBonus() + 2000); // Increase bonus by 2000
@@ -81,5 +81,6 @@ public class Encaptulationn {
         // Display details
         emp.displayDetails();
 
+        sc.close();
     }
 }
