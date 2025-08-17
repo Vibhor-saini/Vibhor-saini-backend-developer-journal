@@ -1,0 +1,3 @@
+git add day02
+git commit -m "Add day04 folder"
+git push origin main
