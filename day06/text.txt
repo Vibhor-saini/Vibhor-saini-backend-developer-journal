@@ -1,0 +1,50 @@
+📖 Concept
+
+File Handling allows us to create, write, read, update, and delete files from a Java program.
+This is super useful for storing employee data before we learn databases.
+
+Java provides a class → java.io.File and helper classes like:
+
+=>FileWriter → write to files
+=>FileReader / BufferedReader → read from files
+=>PrintWriter → easier writing
+
+
+⚡ Shortcut for interview:==
+getMessage() → only error text
+printStackTrace() → detailed error + line numbers (better for debugging)
+
+Option 1 → Show only error message:==
+catch (Exception e) {
+    System.out.println("An error occurred: " + e.getMessage());
+}
+
+Option 2 → Show full stack trace (recommended for debugging):==
+catch (Exception e) {
+    System.out.println("An error occurred:");
+    e.printStackTrace();  // prints detailed error
+}
+
+==> Better to use catch (IOException e) than catch (Exception e)
+
+Use catch (IOException e) because it’s specific and only catches file-related errors,
+ making your code clean, safe, and easy to debug.
+
+If you use catch (Exception e), it will catch everything (even unrelated bugs),
+ which can hide real problems and make debugging harder.
+
+ ✅ So: Specific exception = precise handling, better practice
+❌ Generic exception = hides bugs, messy handling.
+
+Step 2: Writing into a File===
+👉 To write data into a file in Java, we use FileWriter (or BufferedWriter for efficiency).
+→ Always close to save changes.
+
+If the file doesn’t exist → it creates it.
+→ Always close to save changes.
+
+If it exists → it overwrites data by default.
+→ Always close to save changes.
+
+writer.close();
+→ Always close to save changes.

@@ -1,0 +1,7 @@
+📌 Day 06 Task (File Handling)
+
+ Create a file named students.txt.
+ Write 3 students’ details (id, name, age).
+ Read and print the file content line by line.
+ Append one more student.
+ Finally, delete the file.
