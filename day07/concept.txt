@@ -1,0 +1,29 @@
+1. Why Exceptions?
+An exception is an event that disrupts the normal flow of a program (e.g., dividing by zero, accessing a null object, invalid input).
+Instead of crashing, we can handle exceptions gracefully.
+
+🔹 Concept: Exception Handling
+Exception = runtime error that disrupts normal program flow.
+Exception Handling = writing safe code so program won’t crash.
+
+👉 Common runtime exceptions:
+ArithmeticException → divide by 0
+NullPointerException → accessing null object
+ArrayIndexOutOfBoundsException → invalid array index
+IOException → file-related issues
+
+
+🔹 Syntax
+try {
+    // risky code (might throw error)
+} catch (ExceptionType e) {
+    // handle error
+} finally {
+    // (optional) cleanup code, always executes
+}
+
+
+// Note: If you’re not sure what might happen, you can use a general catch:
+// catch (Exception e) {
+//     System.out.println("Something went wrong: " + e.getMessage());
+// }

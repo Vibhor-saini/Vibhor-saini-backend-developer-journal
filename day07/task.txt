@@ -1,0 +1,8 @@
+Day 07 Task
+
+👉 Create a program where:
+
+Take an array of 5 integers.
+Try to access an invalid index (e.g., arr[10]).
+Handle the exception (ArrayIndexOutOfBoundsException).
+Print "Program continues after exception.".

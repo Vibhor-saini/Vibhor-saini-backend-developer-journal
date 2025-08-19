@@ -1,0 +1,126 @@
+Day-by-Day Project-Based Roadmap (2 hrs/day pace)
+
+Phase 1 — Java Foundations + Mini Programs (Day 1–10)
+
+Goal: Learn Java syntax + OOP + collections while building small features in console apps.
+
+Day 1: Java basics-> done
+Learn: Variables, data types, operators, control flow (if, loops).
+Build: Console program to calculate employee salary with bonus.
+
+Day 2: Methods & parameters-> done
+Learn: Method creation, return types, parameters.
+Build: Add methods to calculate salary, tax, and bonus separately.
+
+Day 3: Classes & objects-> done
+Learn: Create custom classes and instantiate objects.
+Build: Create Employee class with fields and methods.
+
+Day 4: Inheritance
+Learn: Parent-child relationship.
+Build: Create Manager class that extends Employee.
+
+Day 5: Polymorphism & abstraction
+Learn: Overloading, overriding, abstract classes.
+Build: Abstract Person class extended by Employee and Manager.
+
+Day 6: Encapsulation & access modifiers-> done
+Learn: Private fields, getters/setters.
+Build: Make Employee fields private and create setters/getters.
+
+Day 7–8: Collections & generics
+Learn: List, Map, generics.
+Build: Store employees in List<Employee> and search using Map<Integer, Employee>.
+
+Day 9: Exception handling
+Learn: try-catch, custom exceptions.
+Build: Throw custom exception if employee not found in list.
+
+Day 10: File handling
+Learn: Reading/writing files.
+Build: Save and load employee data from a text file.
+
+Phase 2 — Tools + Web Basics (Day 11–14)
+Goal: Introduce Maven + web fundamentals before Spring Boot.
+
+Day 11: Maven setup
+Learn: Install Maven, create project, add dependencies.
+Build: Move Employee project into Maven structure.
+
+Day 12: HTTP basics
+Learn: GET, POST, PUT, DELETE, JSON format.
+Build: Use Postman to send mock requests and see responses.
+
+Day 13: REST principles
+Learn: Stateless APIs, endpoints.
+Build: Design API endpoints for our Employee Management System on paper.
+
+Day 14: Introduction to ORM/JPA
+Learn: Entities, primary keys, basic CRUD operations.
+Build: Create Employee entity class matching our earlier console version.
+
+Phase 3 — Spring Boot Core (Day 15–21)
+Goal: Move Employee project into Spring Boot and get first API running.
+
+Day 15: Spring Boot setup
+Learn: @SpringBootApplication, project from Spring Initializr.
+Build: Create base project and run a "Hello World" API.
+
+Day 16–17: REST controllers
+Learn: @RestController, @GetMapping, @PostMapping.
+Build: Create API endpoints to get/add employees (in memory).
+
+Day 18: Dependency Injection & services
+Learn: @Service, @Autowired.
+Build: Move employee logic into a EmployeeService class.
+
+Day 19: Spring Data JPA + H2 DB
+Learn: CrudRepository, H2 console.
+Build: Store and retrieve employees in H2 database.
+
+Day 20–21: CRUD with H2
+Learn: findAll, findById, save, deleteById.
+Build: Full CRUD API for Employee using H2 database.
+
+Phase 4 — MySQL + Advanced Features (Day 22–28)
+Goal: Make app production-ready with real DB and features.
+
+Day 22: MySQL setup
+Learn: Install & connect to Spring Boot.
+Build: Switch from H2 to MySQL.
+
+Day 23–24: Validation
+Learn: @Valid, @NotNull, @Size.
+Build: Validate employee name, email, and salary.
+
+Day 25: Exception handling
+Learn: @ControllerAdvice, @ExceptionHandler.
+Build: Global error handler for invalid requests.
+
+Day 26: Logging
+Learn: Slf4j, logging levels.
+
+Build: Add logs for CRUD operations.
+Day 27–28: Relationships
+
+Learn: @OneToMany, @ManyToOne.
+Build: Add Department entity and link with Employee.
+
+Phase 5 — Deployment (Day 29–30)
+Goal: Deploy and test the final app.
+
+Day 29: Packaging
+Learn: Build JAR file with Maven.
+Build: Test locally.
+
+Day 30: Deployment
+Learn: Deploy to Render or Heroku.
+Build: Deploy Employee Management System API online.
+
+📌 End result:
+By Day 30 you’ll have:
+
+Fully functional Employee Management API in Spring Boot
+Connected to MySQL
+Validation, exception handling, logging
+Deployed live online

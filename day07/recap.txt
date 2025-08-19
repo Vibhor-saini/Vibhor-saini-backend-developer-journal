@@ -1,0 +1,33 @@
+🔹 1. Difference between checked and unchecked exceptions?
+✅ Checked Exception: Checked at compile time (e.g., IOException, SQLException).
+✅ Unchecked Exception: Occurs at runtime, not checked by compiler (e.g., NullPointerException, ArrayIndexOutOfBoundsException).
+
+🔹 2. Difference between throw and throws?
+throw → Used inside a method to actually throw an exception.
+throws → Declares that a method may throw one or more exceptions.
+
+🔹 3. What is the difference between final, finally, and finalize()?
+final → keyword to make a variable constant, prevent method overriding, or class inheritance.
+finally → block that always executes (even if exception occurs).
+finalize() → method called by Garbage Collector before object is destroyed.
+
+🔹 4. Can we have a try block without a catch block?
+👉 Yes, but only if you use a finally block with it.
+Example:
+
+try {
+    // risky code
+} finally {
+    // cleanup
+}
+
+🔹 5. What happens if an exception is not handled?
+👉 The program terminates abruptly, and the JVM prints a stack trace.
+
+
+throw → actually throws error (always).
+throws → just declares possibility (maybe).
+
+⚡ Bonus:
+Q. Can a finally block be skipped?
+👉 Yes, if you call System.exit(0) inside try or catch like: readFile(); [if file not exist then error]
